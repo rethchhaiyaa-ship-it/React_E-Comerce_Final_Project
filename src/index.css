@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;500;600;700;800;900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #F97316;
+  --color-primary-dark: #EA580C;
+  --color-primary-light: #FED7AA;
+  --color-cream: #FAFAF7;
+  --color-card: #FFFFFF;
+  --color-charcoal: #1C1917;
+  --color-stone: #44403C;
+  --color-muted: #F4F4EF;
+  --color-muted-fg: #78716C;
+  --color-border-custom: #E7E5E0;
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-danger: #DC2626;
+  --color-star: #FBBF24;
+
+  --font-display: "DM Serif Display", serif;
+  --font-body: "Nunito", sans-serif;
+
+  --radius-card: 16px;
+  --radius-btn: 12px;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #FAFAF7;
+  color: #1C1917;
+}
+
+/* Hide scrollbar until hover */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #D6D3CD; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #A8A29E; }

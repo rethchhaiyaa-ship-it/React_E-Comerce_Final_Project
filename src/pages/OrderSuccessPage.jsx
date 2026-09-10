@@ -58,7 +58,7 @@ export default function OrderSuccessPage() {
           to="/order-tracking"
           className="flex-1 bg-primary hover:bg-primary-dark text-white font-700 py-4 rounded-xl transition-colors text-center"
         >
-          📍 Track Order
+          Track Order
         </Link>
         <Link
           to="/shop"

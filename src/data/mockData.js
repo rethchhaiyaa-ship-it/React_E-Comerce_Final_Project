@@ -1,14 +1,14 @@
 export const categories = [
-  { id: "burgers", name: "Burgers", emoji: "🍔", count: 48, image: "1568901346375-23c9450c58cd" },
-  { id: "pizza", name: "Pizza", emoji: "🍕", count: 36, image: "1565299624946-b28f40a0ae38" },
-  { id: "chicken", name: "Chicken", emoji: "🍗", count: 52, image: "1613160775314-a41c5b364ec3" },
-  { id: "asian", name: "Asian Food", emoji: "🍜", count: 44, image: "1579584425555-c3ce17fd4351" },
-  { id: "noodles", name: "Noodles", emoji: "🍝", count: 29, image: "1555126634-323283e090fa" },
-  { id: "rice", name: "Rice & Bowls", emoji: "🍚", count: 33, image: "1744444202869-54debf97b285" },
-  { id: "desserts", name: "Desserts", emoji: "🍰", count: 41, image: "1551024601-bec78aea704b" },
-  { id: "drinks", name: "Drinks", emoji: "🥤", count: 27, image: "1544145945-f90425340c7e" },
-  { id: "snacks", name: "Snacks", emoji: "🍟", count: 38, image: "1567620832903-9fc6debc209f" },
-  { id: "healthy", name: "Healthy Food", emoji: "🥗", count: 22, image: "1512621776951-a57141f2eefd" },
+  { id: "burgers", name: "Burgers", emoji: "", count: 48, image: "1568901346375-23c9450c58cd" },
+  { id: "pizza", name: "Pizza", emoji: "", count: 36, image: "1565299624946-b28f40a0ae38" },
+  { id: "chicken", name: "Chicken", emoji: "", count: 52, image: "1613160775314-a41c5b364ec3" },
+  { id: "asian", name: "Asian Food", emoji: "", count: 44, image: "1579584425555-c3ce17fd4351" },
+  { id: "noodles", name: "Noodles", emoji: "", count: 29, image: "1555126634-323283e090fa" },
+  { id: "rice", name: "Rice & Bowls", emoji: "", count: 33, image: "1744444202869-54debf97b285" },
+  { id: "desserts", name: "Desserts", emoji: "", count: 41, image: "1551024601-bec78aea704b" },
+  { id: "drinks", name: "Drinks", emoji: "", count: 27, image: "1544145945-f90425340c7e" },
+  { id: "snacks", name: "Snacks", emoji: "", count: 38, image: "1567620832903-9fc6debc209f" },
+  { id: "healthy", name: "Healthy Food", emoji: "", count: 22, image: "1512621776951-a57141f2eefd" },
 ];
 
 export const products = [

@@ -80,10 +80,10 @@ export default function ContactPage() {
         {/* Contact Info */}
         <div className="space-y-5">
           {[
-            { icon: "📞", label: "Phone", value: "+1 (555) 123-4567", note: "Mon–Fri, 9AM–6PM EST" },
-            { icon: "✉️", label: "Email", value: "hello@foodi.com", note: "Response within 24 hours" },
-            { icon: "📍", label: "Address", value: "350 Fifth Avenue, Suite 4000", note: "New York, NY 10118" },
-            { icon: "🕐", label: "Business Hours", value: "24/7 Online Support", note: "Office: Mon–Fri 9AM–6PM" },
+            { label: "Phone", value: "+1 (555) 123-4567", note: "Mon–Fri, 9AM–6PM EST" },
+            { label: "Email", value: "hello@foodi.com", note: "Response within 24 hours" },
+            { label: "Address", value: "350 Fifth Avenue, Suite 4000", note: "New York, NY 10118" },
+            { label: "Business Hours", value: "24/7 Online Support", note: "Office: Mon–Fri 9AM–6PM" },
           ].map((item) => (
             <div key={item.label} className="bg-card border border-border-custom rounded-2xl p-5 flex gap-4">
               <span className="text-2xl">{item.icon}</span>

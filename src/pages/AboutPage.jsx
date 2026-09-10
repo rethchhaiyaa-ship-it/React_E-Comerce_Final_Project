@@ -42,8 +42,8 @@ export default function AboutPage() {
         {/* Mission & Vision */}
         <div className="grid sm:grid-cols-2 gap-5 mb-16">
           {[
-            { label: "Our Mission", text: "To make extraordinary food accessible to everyone, without compromise on quality, speed, or experience.", emoji: "🎯" },
-            { label: "Our Vision", text: "A world where the best meal of your life is always just minutes away, wherever you are.", emoji: "🌍" },
+            { label: "Our Mission", text: "To make extraordinary food accessible to everyone, without compromise on quality, speed, or experience." },
+            { label: "Our Vision", text: "A world where the best meal of your life is always just minutes away, wherever you are." },
           ].map((item) => (
             <div key={item.label} className="bg-card border border-border-custom rounded-2xl p-7">
               <span className="text-3xl mb-3 block">{item.emoji}</span>

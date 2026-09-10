@@ -35,8 +35,8 @@ export default function ProfilePage() {
                 👤
               </div>
               <div>
-                <p className="font-800 text-charcoal">Alex Johnson</p>
-                <p className="text-xs text-muted-fg">alex@email.com</p>
+                <p className="font-800 text-charcoal">Reth Chhaiya</p>
+                <p className="text-xs text-muted-fg">rethchhaiya@gmail.com</p>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-2 text-center text-xs">
@@ -59,7 +59,7 @@ export default function ProfilePage() {
                 className={`w-full text-left px-4 py-3 text-sm font-700 flex items-center gap-3 border-b border-border-custom last:border-0 transition-colors
                   ${activeTab === tab ? "bg-primary/5 text-primary" : "text-stone hover:bg-muted"}`}
               >
-                {tab === "Profile" ? "👤" : tab === "My Orders" ? "📦" : tab === "Wishlist" ? "♡" : tab === "Addresses" ? "📍" : tab === "Payment Methods" ? "💳" : tab === "Notifications" ? "🔔" : "⚙️"}
+                {tab === "Profile" ? "" : tab === "My Orders" ? "" : tab === "Wishlist" ? "" : tab === "Addresses" ? "" : tab === "Payment Methods" ? "" : tab === "Notifications" ? "" : ""}
                 {" "}{tab}
               </button>
             ))}
@@ -67,7 +67,7 @@ export default function ProfilePage() {
               onClick={() => navigate("/login")}
               className="w-full text-left px-4 py-3 text-sm font-700 text-danger flex items-center gap-3 hover:bg-danger/5 transition-colors"
             >
-              🚪 Logout
+               Logout
             </button>
           </nav>
         </aside>
@@ -96,8 +96,8 @@ export default function ProfilePage() {
               <div className="flex items-start gap-6 mb-8">
                 <div className="w-24 h-24 rounded-2xl bg-primary/10 flex items-center justify-center text-4xl">👤</div>
                 <div>
-                  <h2 className="font-800 text-charcoal text-xl">Alex Johnson</h2>
-                  <p className="text-muted-fg">alex@email.com · +1 555 234 5678</p>
+                  <h2 className="font-800 text-charcoal text-xl">Reth Chhaiya</h2>
+                  <p className="text-muted-fg">rethchhaiya@email.com · +855 965184321</p>
                   <p className="text-xs text-muted-fg mt-1">Member since August 2024</p>
                   <button className="mt-3 bg-primary text-white text-sm font-700 px-5 py-2 rounded-xl hover:bg-primary-dark transition-colors">
                     Edit Profile
@@ -105,7 +105,7 @@ export default function ProfilePage() {
                 </div>
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
-                {[["Full Name", "Alex Johnson"], ["Email", "alex@email.com"], ["Phone", "+1 555 234 5678"], ["Date of Birth", "May 12, 1992"]].map(([label, val]) => (
+                {[["Full Name", "Reth Chhaiya"], ["Email", "rethchhaiya@email.com"], ["Phone", "+855 965184321"], ["Date of Birth", "Jan 27, 2007"]].map(([label, val]) => (
                   <div key={label} className="bg-muted rounded-xl px-4 py-3">
                     <p className="text-xs font-700 text-muted-fg uppercase tracking-wide mb-0.5">{label}</p>
                     <p className="text-charcoal font-600">{val}</p>
@@ -196,8 +196,8 @@ export default function ProfilePage() {
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  { type: "Home", name: "Alex Johnson", phone: "+1 555 234 5678", address: "42 Broadway, Manhattan, New York, NY 10001", isDefault: true },
-                  { type: "Work", name: "Alex Johnson", phone: "+1 555 234 5678", address: "350 Fifth Ave, Midtown, New York, NY 10118", isDefault: false },
+                  { type: "Home", name: "Reth Chhaiya", phone: "+855 965184321", address: "2002 Terk Tla, SenSok, Phnom Penh, NY 10001", isDefault: true },
+                  // { type: "Work", name: "Alex Johnson", phone: "+1 555 234 5678", address: "350 Fifth Ave, Midtown, New York, NY 10118", isDefault: false },
                 ].map((addr) => (
                   <div key={addr.type} className={`bg-card rounded-2xl border p-5 ${addr.isDefault ? "border-primary" : "border-border-custom"}`}>
                     <div className="flex items-center justify-between mb-3">
@@ -241,7 +241,7 @@ export default function ProfilePage() {
                     <p className="font-display text-xl tracking-widest mb-1">•••• •••• •••• {card.last4}</p>
                     <div className="flex justify-between text-sm">
                       <span className="opacity-70">Expires {card.expiry}</span>
-                      <span className="font-700">Alex Johnson</span>
+                      <span className="font-700">Reth Chhaiya</span>
                     </div>
                     <div className="flex gap-2 mt-4">
                       <button className={`text-xs font-700 hover:underline ${card.isDefault ? "text-white/70" : "text-primary"}`}>Edit</button>
@@ -262,11 +262,11 @@ export default function ProfilePage() {
               </div>
               <div className="space-y-3">
                 {[
-                  { icon: "📦", title: "Order out for delivery", body: "Your order ORD-20260905 is on its way — estimated 12 minutes.", time: "5 min ago", read: false },
-                  { icon: "✓", title: "Order confirmed", body: "Restaurant has accepted your order ORD-20260905 and started preparing.", time: "18 min ago", read: false },
-                  { icon: "🏷️", title: "New deal: 30% off healthy bowls", body: "Use code HEALTHY30 before Sep 12 for 30% off all healthy bowls.", time: "2 h ago", read: true },
-                  { icon: "⭐", title: "Rate your last order", body: "How was the Classic Smash Burger? Leave a quick review.", time: "1 day ago", read: true },
-                  { icon: "🎉", title: "Weekend promo is live!", body: "Use WEEKEND20 for 20% off all orders above $30 this weekend.", time: "2 days ago", read: true },
+                  { icon: "", title: "Order out for delivery", body: "Your order ORD-20260905 is on its way — estimated 12 minutes.", time: "5 min ago", read: false },
+                  { icon: "", title: "Order confirmed", body: "Restaurant has accepted your order ORD-20260905 and started preparing.", time: "18 min ago", read: false },
+                  { icon: "", title: "New deal: 30% off healthy bowls", body: "Use code HEALTHY30 before Sep 12 for 30% off all healthy bowls.", time: "2 h ago", read: true },
+                  { icon: "", title: "Rate your last order", body: "How was the Classic Smash Burger? Leave a quick review.", time: "1 day ago", read: true },
+                  { icon: "", title: "Weekend promo is live!", body: "Use WEEKEND20 for 20% off all orders above $30 this weekend.", time: "2 days ago", read: true },
                 ].map((n, i) => (
                   <div key={i} className={`flex gap-4 p-4 rounded-2xl border transition-colors ${!n.read ? "bg-primary/5 border-primary/20" : "bg-card border-border-custom"}`}>
                     <span className="text-2xl shrink-0 mt-0.5">{n.icon}</span>

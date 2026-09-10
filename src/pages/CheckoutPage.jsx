@@ -249,7 +249,7 @@ export default function CheckoutPage() {
                   onClick={() => { clearCart(); navigate("/order-success"); }}
                   className="flex-[2] bg-primary hover:bg-primary-dark text-white font-700 py-4 rounded-xl transition-colors"
                 >
-                  Place Order 🎉
+                  Place Order
                 </button>
               </div>
             </div>

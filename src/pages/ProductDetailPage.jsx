@@ -229,7 +229,7 @@ export default function ProductDetailPage() {
               onClick={() => addToCart(product, qty, { size, spice, addons: selectedAddons.join(", ") })}
               className="flex-1 bg-primary hover:bg-primary-dark text-white font-700 py-3.5 rounded-xl transition-all active:scale-95"
             >
-              Add to Cart — ${totalPrice.toFixed(2)}
+              Add to Cart
             </button>
 
             <Link

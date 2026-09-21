@@ -33,7 +33,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center gap-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
-            <span className="text-2xl">🍽️</span>
+            <span className="text-2xl"></span>
             <span className="font-display text-xl text-charcoal">
               Foodi<span className="text-primary">·</span>
             </span>
@@ -57,7 +57,7 @@ export default function Header() {
 
           {/* Location */}
           <button className="hidden lg:flex items-center gap-1.5 text-sm text-muted-fg hover:text-primary transition-colors">
-            <span>📍</span>
+            <span></span>
             <span className="font-600">Phnom Penh</span>
             <span className="text-xs">▾</span>
           </button>

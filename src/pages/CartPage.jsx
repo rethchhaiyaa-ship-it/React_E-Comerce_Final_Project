@@ -60,12 +60,12 @@ export default function CartPage() {
         <span className="text-charcoal font-600">Cart</span>
       </nav>
 
-      <div className="flex items-center justify-between mb-8">
+      <div data-aos="fade-up" className="flex items-center justify-between mb-8">
         <h1 className="font-display text-3xl text-charcoal">Shopping Cart <span className="text-muted-fg text-xl font-body font-600">({cart.length} {cart.length === 1 ? "item" : "items"})</span></h1>
         <button onClick={clearCart} className="text-sm text-danger hover:underline font-700">Clear all</button>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-8">
+      <div data-aos="fade-up" className="grid lg:grid-cols-3 gap-8">
         {/* Cart Items */}
         <div className="lg:col-span-2 flex flex-col gap-4">
           {cart.map(({ product, quantity, options }) => {
@@ -189,7 +189,6 @@ export default function CartPage() {
             </button>
 
             <div className="mt-4 flex items-center justify-center gap-2 text-xs text-muted-fg">
-              <span>🔒</span>
               <span>Secured by 256-bit SSL encryption</span>
             </div>
           </div>
@@ -198,7 +197,7 @@ export default function CartPage() {
 
       {/* Recommended */}
       {recommended.length > 0 && (
-        <div className="mt-14">
+        <div data-aos="fade-up" className="mt-14">
           <h2 className="font-display text-2xl text-charcoal mb-6">Frequently bought together</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {recommended.map((p) => <ProductCard key={p.id} product={p} />)}

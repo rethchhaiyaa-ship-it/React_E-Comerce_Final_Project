@@ -71,7 +71,7 @@ export default function CheckoutPage() {
       </nav>
 
       {/* Step Indicator */}
-      <div className="flex items-center justify-center mb-10">
+      <div data-aos="fade-up" className="flex items-center justify-center mb-10">
         {STEPS.map((s, i) => (
           <div key={s} className="flex items-center">
             <div className={`flex flex-col items-center ${i < STEPS.length - 1 ? "relative" : ""}`}>
@@ -88,7 +88,7 @@ export default function CheckoutPage() {
         ))}
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-8">
+      <div data-aos="fade-up" className="grid lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
           {/* STEP 0: Delivery */}
           {step === 0 && (
@@ -113,7 +113,7 @@ export default function CheckoutPage() {
                           className={`flex-1 py-2.5 rounded-xl text-sm font-700 border transition-colors
                             ${addressType === t ? "bg-primary text-white border-primary" : "border-border-custom text-stone hover:border-primary/50"}`}
                         >
-                          {t === "Home" ? "🏠 " : t === "Work" ? "🏢 " : "📍 "}{t}
+                          {t === "Home" ? " " : t === "Work" ? " " : " "}{t}
                         </button>
                       ))}
                     </div>
@@ -165,10 +165,10 @@ export default function CheckoutPage() {
                 <h2 className="font-display text-xl text-charcoal mb-5">Payment Method</h2>
                 <div className="flex flex-col gap-3 mb-6">
                   {[
-                    { id: "card", label: "Credit / Debit Card", icon: "💳" },
-                    { id: "cod", label: "Cash on Delivery", icon: "💵" },
-                    { id: "wallet", label: "Digital Wallet", icon: "📱" },
-                    { id: "bank", label: "Bank Transfer", icon: "🏦" },
+                    { id: "card", label: "Credit / Debit Card", icon: "" },
+                    { id: "cod", label: "Cash on Delivery", icon: "" },
+                    { id: "wallet", label: "Digital Wallet", icon: "" },
+                    { id: "bank", label: "Bank Transfer", icon: "" },
                   ].map((opt) => (
                     <label key={opt.id} className={`flex items-center gap-4 p-4 rounded-xl border cursor-pointer transition-colors
                       ${payment === opt.id ? "border-primary bg-primary/5" : "border-border-custom hover:border-primary/40"}`}>
@@ -232,7 +232,7 @@ export default function CheckoutPage() {
                   </div>
                   <div>
                     <p className="font-700 text-charcoal mb-1">Payment</p>
-                    <p className="text-stone capitalize">{payment === "card" ? "💳 Credit/Debit Card" : payment === "cod" ? "💵 Cash on Delivery" : "📱 Digital Wallet"}</p>
+                    <p className="text-stone capitalize">{payment === "card" ? " Credit/Debit Card" : payment === "cod" ? " Cash on Delivery" : " Digital Wallet"}</p>
                     <p className="mt-3 font-700 text-charcoal">Delivery</p>
                     <p className="text-stone capitalize">{delivery} delivery</p>
                   </div>
@@ -259,7 +259,6 @@ export default function CheckoutPage() {
         <div className="hidden lg:block">
           <SummaryPanel />
           <div className="mt-4 text-xs text-muted-fg text-center flex items-center justify-center gap-1.5">
-            <span>🔒</span>
             <span>Secured by 256-bit SSL</span>
           </div>
         </div>

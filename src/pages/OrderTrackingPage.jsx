@@ -19,18 +19,18 @@ export default function OrderTrackingPage() {
         <span className="text-charcoal font-600">Track Order</span>
       </nav>
 
-      <h1 className="font-display text-3xl text-charcoal mb-8">Order Tracking</h1>
+      <h1 data-aos="fade-up" className="font-display text-3xl text-charcoal mb-8">Order Tracking</h1>
 
       <div className="grid lg:grid-cols-3 gap-8">
         {/* Timeline */}
         <div className="lg:col-span-2 space-y-6">
           {/* Map placeholder */}
-          <div className="relative bg-gradient-to-br from-green-100 to-blue-100 rounded-2xl h-56 flex items-center justify-center overflow-hidden border border-border-custom">
+          <div data-aos="fade-up" className="relative bg-gradient-to-br from-green-100 to-blue-100 rounded-2xl h-56 flex items-center justify-center overflow-hidden border border-border-custom">
             <div className="absolute inset-0 opacity-30" style={{
               backgroundImage: "repeating-linear-gradient(0deg,transparent,transparent 40px,#ccc 40px,#ccc 41px),repeating-linear-gradient(90deg,transparent,transparent 40px,#ccc 40px,#ccc 41px)"
             }} />
             <div className="relative z-10 text-center">
-              <div className="text-5xl mb-2">🗺️</div>
+              <div className="text-5xl mb-2"></div>
               <p className="font-700 text-stone">Live Map Tracking</p>
               <p className="text-sm text-muted-fg">Driver is 1.2 km away</p>
             </div>
@@ -40,7 +40,7 @@ export default function OrderTrackingPage() {
           </div>
 
           {/* Status Timeline */}
-          <div className="bg-card border border-border-custom rounded-2xl p-6">
+          <div data-aos="fade-up" className="bg-card border border-border-custom rounded-2xl p-6">
             <h2 className="font-800 text-charcoal mb-6">Order Status</h2>
             <div className="relative">
               {STATUS_STEPS.map((s, i) => (
@@ -70,10 +70,10 @@ export default function OrderTrackingPage() {
         {/* Sidebar */}
         <div className="space-y-5">
           {/* Order Info */}
-          <div className="bg-card border border-border-custom rounded-2xl p-5 text-sm">
+          <div data-aos="fade-up" className="bg-card border border-border-custom rounded-2xl p-5 text-sm">
             <div className="flex items-center gap-2 mb-4">
               <span className="inline-flex items-center gap-1.5 bg-warning/10 text-warning border border-warning/20 px-3 py-1.5 rounded-full text-xs font-800">
-                🚴 Out for Delivery
+                 Out for Delivery
               </span>
             </div>
             <div className="space-y-3 text-sm">
@@ -93,7 +93,7 @@ export default function OrderTrackingPage() {
           </div>
 
           {/* Driver */}
-          <div className="bg-card border border-border-custom rounded-2xl p-5">
+          <div data-aos="fade-up" className="bg-card border border-border-custom rounded-2xl p-5">
             <p className="font-800 text-charcoal mb-3">Your Driver</p>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-2xl">🧑</div>
@@ -107,12 +107,12 @@ export default function OrderTrackingPage() {
               </div>
             </div>
             <button className="w-full border border-border-custom hover:bg-muted text-charcoal font-700 text-sm py-3 rounded-xl transition-colors flex items-center justify-center gap-2">
-              📞 Contact Driver
+               Contact Driver
             </button>
           </div>
 
           {/* Order Items */}
-          <div className="bg-card border border-border-custom rounded-2xl p-5 text-sm">
+          <div data-aos="fade-up" className="bg-card border border-border-custom rounded-2xl p-5 text-sm">
             <p className="font-800 text-charcoal mb-3">Items Ordered</p>
             {[["Classic Smash Burger ×2", "$25.98"], ["Garlic Parmesan Fries ×1", "$6.49"], ["Mango Passion Smoothie ×1", "$6.99"]].map(([item, price]) => (
               <div key={item} className="flex justify-between py-1.5 border-b border-border-custom last:border-0">

@@ -16,7 +16,7 @@ export default function ContactPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-16">
-      <div className="text-center mb-12">
+      <div data-aos="fade-up" className="text-center mb-12">
         <p className="text-primary font-700 text-sm uppercase tracking-widest mb-1">Get in touch</p>
         <h1 className="font-display text-4xl text-charcoal">Contact Us</h1>
         <p className="text-muted-fg mt-3 max-w-md mx-auto">
@@ -24,7 +24,7 @@ export default function ContactPage() {
         </p>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-10">
+      <div data-aos="fade-up" className="grid lg:grid-cols-3 gap-10">
         {/* Form */}
         <div className="lg:col-span-2 bg-card border border-border-custom rounded-2xl p-8">
           <form onSubmit={submit} className="grid sm:grid-cols-2 gap-5">

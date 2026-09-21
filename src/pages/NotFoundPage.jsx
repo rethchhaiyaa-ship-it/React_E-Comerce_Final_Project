@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function NotFoundPage() {
   return (
-    <div className="max-w-xl mx-auto px-4 py-32 text-center">
+    <div data-aos="fade-up" className="max-w-xl mx-auto px-4 py-32 text-center">
       <div className="text-8xl mb-6">🍽️</div>
       <h1 className="font-display text-5xl text-charcoal mb-3">404</h1>
       <p className="font-display text-2xl text-charcoal mb-2">Page not found</p>

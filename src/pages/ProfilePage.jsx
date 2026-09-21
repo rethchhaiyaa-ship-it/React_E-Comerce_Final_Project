@@ -26,14 +26,12 @@ export default function ProfilePage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="flex gap-8">
+      <div data-aos="fade-up" className="flex gap-8">
         {/* Sidebar */}
         <aside className="w-64 shrink-0 hidden lg:block">
           <div className="bg-card border border-border-custom rounded-2xl p-5 mb-4">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-2xl">
-                👤
-              </div>
+              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-2xl"></div>
               <div>
                 <p className="font-800 text-charcoal">Reth Chhaiya</p>
                 <p className="text-xs text-muted-fg">rethchhaiya@gmail.com</p>

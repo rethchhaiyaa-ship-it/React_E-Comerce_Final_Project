@@ -137,7 +137,7 @@ export default function ShopPage() {
         {q && <><span>/</span><span className="text-charcoal font-600">"{q}"</span></>}
       </nav>
 
-      <div className="flex items-center justify-between mb-6">
+      <div data-aos="fade-up" className="flex items-center justify-between mb-6">
         <h1 className="font-display text-3xl text-charcoal">{q ? `Results for "${q}"` : "All Food Items"}</h1>
         <button
           onClick={() => setFilterOpen(!filterOpen)}
@@ -147,7 +147,7 @@ export default function ShopPage() {
         </button>
       </div>
 
-      <div className="flex gap-8">
+      <div data-aos="fade-up" className="flex gap-8">
         {/* Sidebar */}
         <aside className={`shrink-0 w-64 ${filterOpen ? "fixed inset-0 z-50 bg-white overflow-y-auto p-6 lg:relative lg:block lg:bg-transparent lg:p-0 lg:z-auto" : "hidden lg:block"}`}>
           {filterOpen && (

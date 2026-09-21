@@ -5,17 +5,17 @@ export default function OrderSuccessPage() {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-20 text-center">
-      <div className="text-8xl mb-6 animate-bounce">🎉</div>
-      <div className="inline-flex items-center gap-2 bg-success/10 text-success px-5 py-2 rounded-full font-700 text-sm mb-5 border border-success/20">
+      <div data-aos="fade-up" className="text-8xl mb-6 animate-bounce">🎉</div>
+      <div data-aos="fade-up" className="inline-flex items-center gap-2 bg-success/10 text-success px-5 py-2 rounded-full font-700 text-sm mb-5 border border-success/20">
         ✓ Order Confirmed
       </div>
 
-      <h1 className="font-display text-4xl sm:text-5xl text-charcoal mb-3">Your order is in!</h1>
-      <p className="text-muted-fg text-lg mb-8">
+      <h1 data-aos="fade-up" className="font-display text-4xl sm:text-5xl text-charcoal mb-3">Your order is in!</h1>
+      <p data-aos="fade-up" className="text-muted-fg text-lg mb-8">
         Hang tight — your food is being prepared and will be on its way soon.
       </p>
 
-      <div className="bg-card border border-border-custom rounded-2xl p-8 mb-8 text-left">
+      <div data-aos="fade-up" className="bg-card border border-border-custom rounded-2xl p-8 mb-8 text-left">
         <div className="grid sm:grid-cols-2 gap-5 text-sm">
           <div>
             <p className="text-xs font-700 text-muted-fg uppercase tracking-wide mb-1">Order Number</p>
@@ -31,7 +31,7 @@ export default function OrderSuccessPage() {
           </div>
           <div>
             <p className="text-xs font-700 text-muted-fg uppercase tracking-wide mb-1">Payment</p>
-            <p className="text-stone">💳 Credit Card •••• 4242</p>
+            <p className="text-stone"> Credit Card •••• 4242</p>
           </div>
         </div>
 
@@ -53,7 +53,7 @@ export default function OrderSuccessPage() {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-3">
+      <div data-aos="fade-up" className="flex flex-col sm:flex-row gap-3">
         <Link
           to="/order-tracking"
           className="flex-1 bg-primary hover:bg-primary-dark text-white font-700 py-4 rounded-xl transition-colors text-center"

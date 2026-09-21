@@ -24,14 +24,14 @@ export default function DealsPage() {
         <span className="text-charcoal font-600">Deals</span>
       </nav>
 
-      <div className="text-center mb-12">
+      <div data-aos="fade-up" className="text-center mb-12">
         <p className="text-primary font-700 text-sm uppercase tracking-widest mb-1">Limited Time</p>
         <h1 className="font-display text-4xl sm:text-5xl text-charcoal">Deals & Promotions</h1>
         <p className="text-muted-fg mt-3">Use these exclusive codes at checkout and save big on your next order.</p>
       </div>
 
       {/* Hero Deal */}
-      <div className="relative overflow-hidden rounded-3xl mb-10">
+      <div data-aos="fade-up" className="relative overflow-hidden rounded-3xl mb-10">
         <img src={`${IMG}1504674900247-0877df9cc836?w=1400&h=400&fit=crop&auto=format`} alt="Weekend deal" className="w-full h-64 object-cover bg-muted" />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 to-transparent" />
         <div className="absolute inset-0 flex items-center px-10">
@@ -52,7 +52,7 @@ export default function DealsPage() {
       </div>
 
       {/* Deal Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {deals.map((deal) => (
           <div key={deal.id} className="bg-card border border-border-custom rounded-2xl overflow-hidden hover:shadow-md transition-all">
             <div className="relative h-36 overflow-hidden">
@@ -81,7 +81,7 @@ export default function DealsPage() {
                 </button>
               </div>
 
-              <p className="text-xs text-muted-fg mb-3">⏰ Expires {deal.expires}</p>
+              <p className="text-xs text-muted-fg mb-3 ps-1">Expires {deal.expires}</p>
 
               <Link
                 to="/shop"
@@ -95,13 +95,13 @@ export default function DealsPage() {
       </div>
 
       {/* Extra deals */}
-      <div className="mt-12">
+      <div data-aos="fade-up" className="mt-12">
         <h2 className="font-display text-2xl text-charcoal mb-6">Loyalty Rewards</h2>
         <div className="grid sm:grid-cols-3 gap-5">
           {[
-            { icon: "🌟", title: "Bronze Member", desc: "0–9 orders", benefit: "Free dessert on 5th order" },
-            { icon: "🥈", title: "Silver Member", desc: "10–24 orders", benefit: "10% off every order" },
-            { icon: "🥇", title: "Gold Member", desc: "25+ orders", benefit: "Free delivery + 15% off" },
+            { icon: "", title: "Bronze Member", desc: "0–9 orders", benefit: "Free dessert on 5th order" },
+            { icon: "", title: "Silver Member", desc: "10–24 orders", benefit: "10% off every order" },
+            { icon: "", title: "Gold Member", desc: "25+ orders", benefit: "Free delivery + 15% off" },
           ].map((tier) => (
             <div key={tier.title} className="bg-card border border-border-custom rounded-2xl p-6 text-center">
               <div className="text-4xl mb-3">{tier.icon}</div>

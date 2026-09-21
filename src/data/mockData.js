@@ -251,7 +251,7 @@ export const reviews = [
   {
     id: "r1",
     name: "Sarah Mitchell",
-    avatar: "1494790108377-be9c29b29330",
+    avatar: "https://i.pinimg.com/736x/70/ed/fd/70edfdc24e5b9a6b6a541a7362e493d8.jpg",
     rating: 5,
     comment: "Absolutely incredible! The smash burger arrived still crispy and hot. Best food delivery experience I've had in years. Will definitely be ordering again.",
     date: "Sep 2, 2026",
@@ -260,7 +260,7 @@ export const reviews = [
   {
     id: "r2",
     name: "James Park",
-    avatar: "1507003211169-0a1dd7228f2d",
+    avatar: "https://i.pinimg.com/736x/b4/bc/fc/b4bcfcab46927c61803f7baa45c7e3d7.jpg",
     rating: 5,
     comment: "The Korean Fried Chicken is a game changer. Perfectly crispy, the sauce is addictive, and it got here in under 30 minutes. Blown away.",
     date: "Aug 28, 2026",
@@ -269,7 +269,7 @@ export const reviews = [
   {
     id: "r3",
     name: "Amara Osei",
-    avatar: "1531746020798-e6953c6e8e04",
+    avatar: "https://i.pinimg.com/736x/a5/84/f0/a584f0fe396c1b5b5ca2566ad0fae328.jpg",
     rating: 5,
     comment: "The Chicken Biryani reminded me of home cooking. Generous portion, aromatic, and the raita was a perfect complement. This is my new go-to order.",
     date: "Aug 25, 2026",
@@ -278,7 +278,7 @@ export const reviews = [
   {
     id: "r4",
     name: "Chloe Brennan",
-    avatar: "1438761681033-6461ffad8d80",
+    avatar: "https://i.pinimg.com/1200x/e0/d1/7b/e0d17b563748132056032c9dc42e0287.jpg",
     rating: 4,
     comment: "The açaí bowl was fresh and beautifully presented even in a delivery box — that's impressive. Good portion size, genuinely healthy ingredients.",
     date: "Aug 20, 2026",

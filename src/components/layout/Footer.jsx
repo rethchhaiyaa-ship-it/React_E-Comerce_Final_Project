@@ -51,9 +51,9 @@ export default function Footer() {
             ))}
           </ul>
           <div className="mt-5 text-sm space-y-1.5 text-stone-400">
-            <p>📞 +1 (555) 123-4567</p>
-            <p>✉️ hello@foodi.com</p>
-            <p>📍 New York, NY 10001</p>
+            <p> +855 965184321</p>
+            <p> hello@foodi.com</p>
+            <p> Phnom Penh, Cambodia</p>
           </div>
         </div>
       </div>

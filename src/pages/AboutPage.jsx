@@ -1,10 +1,10 @@
 const IMG = "https://images.unsplash.com/photo-";
 
 const team = [
-  { name: "Elena Marchetti", role: "CEO & Co-founder", img: "1494790108377-be9c29b29330" },
-  { name: "James Park", role: "Head of Operations", img: "1507003211169-0a1dd7228f2d" },
-  { name: "Amara Osei", role: "Head Chef & Curation", img: "1531746020798-e6953c6e8e04" },
-  { name: "Chloe Brennan", role: "Head of Design", img: "1438761681033-6461ffad8d80" },
+  { name: "Elena Marchetti", role: "CEO & Co-founder", img: "https://i.pinimg.com/736x/70/ed/fd/70edfdc24e5b9a6b6a541a7362e493d8.jpg" },
+  { name: "James Park", role: "Head of Operations", img: "https://i.pinimg.com/736x/b4/bc/fc/b4bcfcab46927c61803f7baa45c7e3d7.jpg" },
+  { name: "Amara Osei", role: "Head Chef & Curation", img: "https://i.pinimg.com/736x/a5/84/f0/a584f0fe396c1b5b5ca2566ad0fae328.jpg" },
+  { name: "Chloe Brennan", role: "Head of Design", img: "https://i.pinimg.com/1200x/e0/d1/7b/e0d17b563748132056032c9dc42e0287.jpg" },
 ];
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
       {/* Hero */}
       <div className="relative h-64 sm:h-80 overflow-hidden">
         <img src={`${IMG}1504674900247-0877df9cc836?w=1600&h=600&fit=crop&auto=format`} alt="About Foodi" className="w-full h-full object-cover bg-muted" />
-        <div className="absolute inset-0 bg-charcoal/70 flex items-center justify-center text-center px-4">
+          <div data-aos="fade-up" className="absolute inset-0 bg-charcoal/70 flex items-center justify-center text-center px-4">
           <div>
             <p className="text-primary font-700 text-sm uppercase tracking-widest mb-2">Our Story</p>
             <h1 className="font-display text-4xl sm:text-5xl text-white">About Foodi</h1>
@@ -23,7 +23,7 @@ export default function AboutPage() {
 
       <div className="max-w-5xl mx-auto px-4 py-16">
         {/* Intro */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div data-aos="fade-up" className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <p className="text-primary font-700 text-sm uppercase tracking-widest mb-2">Who we are</p>
             <h2 className="font-display text-3xl text-charcoal mb-4">We started hungry, and built something delicious</h2>
@@ -40,7 +40,7 @@ export default function AboutPage() {
         </div>
 
         {/* Mission & Vision */}
-        <div className="grid sm:grid-cols-2 gap-5 mb-16">
+        <div data-aos="fade-up" className="grid sm:grid-cols-2 gap-5 mb-16">
           {[
             { label: "Our Mission", text: "To make extraordinary food accessible to everyone, without compromise on quality, speed, or experience." },
             { label: "Our Vision", text: "A world where the best meal of your life is always just minutes away, wherever you are." },
@@ -54,7 +54,7 @@ export default function AboutPage() {
         </div>
 
         {/* Stats */}
-        <div className="bg-primary rounded-2xl p-8 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-white mb-16">
+        <div data-aos="fade-up" className="bg-primary rounded-2xl p-8 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-white mb-16">
           {[["600+", "Partner restaurants"], ["12", "Cities covered"], ["2M+", "Meals delivered"], ["4.9★", "Average rating"]].map(([num, label]) => (
             <div key={label}>
               <p className="font-display text-4xl mb-1">{num}</p>
@@ -64,7 +64,7 @@ export default function AboutPage() {
         </div>
 
         {/* Team */}
-        <div className="mb-16">
+        <div data-aos="fade-up" className="mb-16">
           <div className="text-center mb-8">
             <p className="text-primary font-700 text-sm uppercase tracking-widest mb-1">The people</p>
             <h2 className="font-display text-3xl text-charcoal">Meet the team</h2>
@@ -73,7 +73,7 @@ export default function AboutPage() {
             {team.map((member) => (
               <div key={member.name} className="text-center">
                 <img
-                  src={`${IMG}${member.img}?w=200&h=200&fit=crop&auto=format`}
+                  src={member.img.startsWith("http") ? member.img : `${IMG}${member.img}?w=200&h=200&fit=crop&auto=format`}
                   alt={member.name}
                   className="w-24 h-24 rounded-2xl object-cover mx-auto mb-3 bg-muted"
                 />

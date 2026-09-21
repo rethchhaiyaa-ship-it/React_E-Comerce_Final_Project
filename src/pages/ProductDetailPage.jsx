@@ -43,7 +43,7 @@ export default function ProductDetailPage() {
   if (!product) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-24 text-center">
-        <p className="text-5xl mb-4">🍽️</p>
+        <p className="text-5xl mb-4"></p>
         <h2 className="font-display text-3xl text-charcoal mb-2">Product not found</h2>
         <Link to="/shop" className="text-primary font-700 hover:underline">← Back to shop</Link>
       </div>
@@ -64,7 +64,7 @@ export default function ProductDetailPage() {
         <span className="text-charcoal font-600">{product.name}</span>
       </nav>
 
-      <div className="grid lg:grid-cols-2 gap-12">
+      <div data-aos="fade-up" className="grid lg:grid-cols-2 gap-12">
         {/* Images */}
         <div className="flex flex-col gap-4">
           <div className="relative overflow-hidden rounded-2xl aspect-[4/3] bg-muted">
@@ -116,8 +116,8 @@ export default function ProductDetailPage() {
               <span className="font-700 text-charcoal">{product.rating}</span>
               <span className="text-muted-fg text-sm">({product.reviews.toLocaleString()} reviews)</span>
             </div>
-            {product.prepTime && <span className="text-sm text-muted-fg border-l border-border-custom pl-4">⏱ {product.prepTime}</span>}
-            {product.calories && <span className="text-sm text-muted-fg border-l border-border-custom pl-4">🔥 {product.calories} kcal</span>}
+            {product.prepTime && <span className="text-sm text-muted-fg border-l border-border-custom pl-4"> {product.prepTime}</span>}
+            {product.calories && <span className="text-sm text-muted-fg border-l border-border-custom pl-4"> {product.calories} kcal</span>}
           </div>
 
           <div className="flex items-baseline gap-3">
@@ -133,8 +133,8 @@ export default function ProductDetailPage() {
           </div>
 
           <div className="flex items-center gap-3">
-            {[product.isVeg && "🌿 Vegetarian", product.isVegan && "🌱 Vegan",
-              product.isHalal && "✓ Halal", product.isGlutenFree && "🌾 Gluten-Free"].filter(Boolean).map((d) => (
+            {[product.isVeg && " Vegetarian", product.isVegan && " Vegan",
+              product.isHalal && "✓ Halal", product.isGlutenFree && " Gluten-Free"].filter(Boolean).map((d) => (
               <span key={d} className="text-xs font-700 bg-green-50 text-success border border-green-200 px-3 py-1 rounded-full">{d}</span>
             ))}
           </div>
@@ -243,7 +243,7 @@ export default function ProductDetailPage() {
           <div className="flex items-center gap-4 text-sm text-muted-fg pt-2">
             <span>✓ In stock</span>
             <span>·</span>
-            <span>🚚 Free delivery above $25</span>
+            <span> Free delivery above $25</span>
             <span>·</span>
             <span>↩ Easy returns</span>
           </div>
@@ -251,7 +251,7 @@ export default function ProductDetailPage() {
       </div>
 
       {/* Tabs */}
-      <div className="mt-14">
+      <div data-aos="fade-up" className="mt-14">
         <div className="flex border-b border-border-custom mb-8">
           {(["description", "nutrition", "reviews"]).map((t) => (
             <button
@@ -324,7 +324,7 @@ export default function ProductDetailPage() {
 
       {/* Related */}
       {related.length > 0 && (
-        <div className="mt-16">
+        <div data-aos="fade-up" className="mt-16">
           <h2 className="font-display text-2xl text-charcoal mb-6">You might also like</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {related.map((p) => <ProductCard key={p.id} product={p} />)}

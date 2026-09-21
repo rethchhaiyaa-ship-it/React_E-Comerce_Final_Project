@@ -18,7 +18,7 @@ export default function ProductCard({ product }) {
     : 0;
 
   return (
-    <div className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group border border-border-custom flex flex-col">
+    <div data-aos="fade-up" className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group border border-border-custom flex flex-col">
       <div className="relative overflow-hidden">
         <Link to={`/product/${product.id}`}>
           <img
